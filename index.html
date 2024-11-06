@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Product Management</title>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100">
+
+  <div class="container mx-auto p-5">
+    <h1 class="text-4xl font-bold text-center mb-10">Admin Product Management</h1>
+
+    <!-- Add Product Form -->
+    <div class="mb-10">
+      <h2 class="text-2xl font-bold mb-5">Add Product</h2>
+      <form id="add-product-form" class="space-y-4">
+        <input type="text" id="product-name" placeholder="Product Name" class="p-2 border rounded w-full">
+        <input type="text" id="product-price" placeholder="Product Price" class="p-2 border rounded w-full">
+        <textarea id="product-description" placeholder="Product Description" class="p-2 border rounded w-full"></textarea>
+        <button type="button" id="add-product-btn" class="bg-blue-500 text-white p-2 rounded">Add Product</button>
+      </form>
+    </div>
+
+    <!-- Product List -->
+    <div id="product-list" class="grid grid-cols-1 md:grid-cols-3 gap-6"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
